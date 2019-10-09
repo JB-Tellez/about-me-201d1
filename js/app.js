@@ -1,25 +1,34 @@
+
+var q6 = prompt('guss, how old am I??')
 var myAge = 24;
+var i;
 
-var ageQuestion = 'guess how old am I??';
+for (i = 0; (i < 4); i++) {
+    if (60 > q6 && q6 > 49) {
+        console.log(q6)
+        alert('I am younger than ' + q6);
 
-for (var i = 0; i < 4; i++) {
-
-    var ageResponse = prompt(ageQuestion);
-
-    if (ageResponse > myAge) {
-
-        alert('too high');
-
-    } else if (ageResponse < myAge) {
-
-        alert('too low');
+    } else if (30 < q6 && q6 < 49) {
+        alert('I am older than ' + q6);
     }
-    else if (ageResponse == myAge) {
 
-        alert('that\'s right i am ' + myAge + ' years old');
+    else if (100 > q6 && q6 > 49) {
+        alert(' I am not that old!!');
+    }
+    else if (0 < q6 && q6 < 29) {
+        alert( ' I am not that young!!');
 
-        score += 1;
+    }
+    else if (q6 == myAge) {
       
+        alert('that\'s right i am 24 years old ' );
         break;
-    } 
+    }
+
+    else if (i == 3) {
+        alert('I am 49 years old');
+        break;
+    }
+    q6 = prompt('guss, how old am I??');
 }
+
