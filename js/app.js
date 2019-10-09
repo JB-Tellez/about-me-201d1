@@ -1,8 +1,10 @@
-var myAge = 24;
+var myAge = 49;
+var score = 0;
 
 var ageQuestion = 'guess how old am I??';
 
 for (var i = 0; i < 4; i++) {
+    console.log("i = ", i);
 
     var ageResponse = prompt(ageQuestion);
 
@@ -22,4 +24,10 @@ for (var i = 0; i < 4; i++) {
       
         break;
     } 
+    else{
+        alert('Invalid!!!!!');
+        i-=1;
+        
+        
+    }
 }
